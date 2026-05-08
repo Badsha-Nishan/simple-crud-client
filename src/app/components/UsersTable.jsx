@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 import { AlertDialog, Button, Table } from "@heroui/react";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ const UsersTable = ({ users, deleteUserAction }) => {
                     <Link href={`/users/${user._id}`}>
                       <Button variant="outline">Details</Button>
                     </Link>
-                    <Link href={`/users/${user._id}`}>
+                    <Link href={`/users/${user._id}/edit`}>
                       <Button variant="primary">Edit</Button>
                     </Link>
                     <AlertDialog>
